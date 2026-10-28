@@ -1,0 +1,11 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - app
+        - routes
+        - database
+    level: 5
+    # Atribut model (kolom DB) tidak dideklarasikan satu per satu.
+    checkModelProperties: false
